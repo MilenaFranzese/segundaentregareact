@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItems{
+    border: 1px solid black;
+    height: 380px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Imagen */
+.cardItems .cardImg{
+    border: 1px solid gold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cardItems .cardImg img{
+    width: 80%;
+}
+
+/* Descripción */
+.cardDescription{
+    border: 1px solid blue;
+}
+
+.cardDescription .description{
+    display: none;
+}
