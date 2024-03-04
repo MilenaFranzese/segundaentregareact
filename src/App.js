@@ -1,12 +1,12 @@
 import './style.css';
 import Navbar from './components/Navbar';
-import CardItem from './components/CardItem';
+import ContainerCardItems from './components/ContainerCardItems';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <CardItem/>
+      <ContainerCardItems/>
     </div>
   );
 }

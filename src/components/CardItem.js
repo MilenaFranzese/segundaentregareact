@@ -9,7 +9,11 @@ function CardItem (){
     return(
         <div className="cardItems">
             <Image imagen={ImgPrueba}/>
-            <Description title="Monstera Adasonii"/>
+            <Description    
+                        title="Monstera Adasonii"
+                        cantidad = {5}
+                        precio = {2000}
+                        />
 
             <div className="buttons">   
                 <ButtonDetalle/>
