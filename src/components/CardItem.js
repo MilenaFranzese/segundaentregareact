@@ -3,16 +3,15 @@ import Description from "./Description";
 import ButtonDetalle from "./ButtonDetalle";
 import ButtonAddCart from "./ButtonAddCart";
 import "./styles/cardItem.css";
-import ImgPrueba from "../components/img/img1.jpg"
 
-function CardItem (){
+function CardItem (props){
     return(
         <div className="cardItems">
-            <Image imagen={ImgPrueba}/>
+            <Image imagen={props.imagen}/>
             <Description    
-                        title="Monstera Adasonii"
-                        cantidad = {5}
-                        precio = {2000}
+                        title={props.title}
+                        cantidad = {props.cantidad}
+                        precio = {props.precio}
                         />
 
             <div className="buttons">   
