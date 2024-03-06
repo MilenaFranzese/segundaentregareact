@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import ContainerCardItems from './components/ContainerCardItems';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
 function App() {
   return (
     <div className="App">
@@ -11,7 +10,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route path="/" element={ <ContainerCardItems />}/>
-            <Route path="item/:id" element={ <ContainerCardItems />}/>
+            <Route path="item/:idItem" element={ <ContainerCardItems />}/>
             <Route path="/category/:idCategory"  element={ <ContainerCardItems />}/>
           </Routes>
         </BrowserRouter>
