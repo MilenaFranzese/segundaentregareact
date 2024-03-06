@@ -8,7 +8,7 @@ const ContainerCardItems = () => {
     const [ datos, setDatos] = useState ( [] );
 
     useEffect(() => {
-        fetchSimulation(productos, 3000)
+        fetchSimulation(productos, 1000)
         .then(resp => setDatos(resp))
         .catch(error => console.log(error))
     }, [])

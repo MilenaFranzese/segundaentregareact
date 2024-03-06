@@ -24,12 +24,13 @@ header .containerBrand{
     display: flex;
     align-items: center;
     max-width: auto; 
-    margin: 0 auto; 
+    margin: 0 auto;
+
 }
 
 .brandContainer h1 {
     margin-left: 10px;
-    
+    text-decoration: none;
 }
 
 .iconPlant{
@@ -54,6 +55,7 @@ header .containerItemList ul{
     list-style: none;
     display: flex;
     margin: 0;
+
 }
 
 header .containerItemList ul li{
@@ -64,6 +66,7 @@ header .containerItemList ul li{
     font-size: 18px;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* containerCart */
