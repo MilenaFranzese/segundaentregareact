@@ -23,7 +23,7 @@
 .detailsItem .containerLeft .cardImg {
     display: flex;
     justify-content: center;
-    
+    width: 80%;
 }
 
 .detailsItem .containerLeft Img{
@@ -88,7 +88,7 @@
 
 /* precio */
 .detailsItem .containerRigth .cardDescription .precio{
-    color: #5b00fb;
+    color:  rgb(38, 161, 38);
     font-weight: bold;
     font-size: 55px;
     margin: 10px 0;
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #5b00fb;
+    border: 1px solid #045716;
     border-radius: 50px;
     height: 60px;
 }
@@ -128,7 +128,7 @@
 
 
 .detailsItem .containerRigth .buttons .addCantCart div #quitar, .detailsItem .containerRigth .buttons .addCantCart div #aumentar {
-    background-color: #5b00fb;
+    background-color: rgb(38, 161, 38);
     border: none;
     color: white;
     width: 35px;
@@ -139,7 +139,7 @@
 
 .detailsItem .containerRigth .buttons #detalles{
     width: 48%;
-    background-color: #5b00fb;
+    background-color: rgb(38, 161, 38);
     border-radius: 50px;
     color: white;
     border: none;
