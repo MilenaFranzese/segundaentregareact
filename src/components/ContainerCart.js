@@ -1,5 +1,4 @@
 import "../../styles/containerCart.css";
-import close from "../../img/close.svg";
 import ItemCart from "./ItemCart";
 import clear from "../../img/clear.svg";
 import { useContext } from "react";
