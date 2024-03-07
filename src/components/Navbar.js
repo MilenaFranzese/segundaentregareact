@@ -5,7 +5,7 @@ import ItemListContainer from "./ItemListContainer";
 function Navbar (){
     return(
         <header>
-            <div className="containerBrand">
+            <div className="brandContainer">
                 <Brand/>
             </div>
 

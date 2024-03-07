@@ -7,7 +7,7 @@ function Brand (){
             <Link to="/">
                 <div className="brandContainer">
                     <img src={icon} alt="icon tienda" className="iconPlant"></img>
-                    <h1>Vivero Online</h1>
+                    <h1 className="brandTitle">Vivero Online </h1>
                 </div>
             </Link>
 
