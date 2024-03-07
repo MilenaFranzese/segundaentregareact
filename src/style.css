@@ -6,9 +6,9 @@ body{
 
 header{
     width: 100%;
-    height: 60px;
+    height: 75px;
     display: flex;
-    background-color: rgb(63, 102, 75);
+    background-color: rgb(89, 128, 101);
     color: white;
 }
 
@@ -31,6 +31,7 @@ header .brandContainer{
 .brandContainer h1{
     margin-left: 10px;
     width: 200px;
+    font-weight: bold;
 }
 
 .brandContainer a {
@@ -82,6 +83,7 @@ header .containerItemList ul li{
 .containerItemList ul li a {
     color: inherit;
     text-decoration: none;
+    font-size: 20px;
 }
 
 /* containerCart */
