@@ -23,7 +23,7 @@
 .detailsItem .containerLeft .cardImg {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
 }
 
 .detailsItem .containerLeft Img{
@@ -48,17 +48,16 @@
 
 .detailsItem .containerRigth .cardDescription {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    height: 450px
-    
+    height: 350px;
 }
 
 
 /* title */
 .detailsItem .containerRigth .cardDescription .title {
     font-size: 45px;
-    margin: 10px 0;
+    /* margin: 40px 0 0 0; */
 }
 
 /* description */
@@ -96,26 +95,26 @@
 
 /* buttons */
 .detailsItem .containerRigth .buttons {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     width: 100%;
     height: 80px;
     margin: 10px 0;
 }
 
 .detailsItem .containerRigth .buttons .addCantCart{
-    width: 48%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #045716;
+    border: 2px solid #045716;
     border-radius: 50px;
     height: 60px;
+    margin: 20px;
 }
 
 .detailsItem .containerRigth .buttons .addCantCart span {
     font-weight: 20px;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .detailsItem .containerRigth .buttons .addCantCart div {
@@ -137,11 +136,14 @@
     font-size: 20px;
 }
 
-.detailsItem .containerRigth .buttons #detalles{
-    width: 48%;
+.detailsItem .containerRigth .buttons .agregarAlCarrito{
+    display: flex;
+    justify-content: center;
+    width: 75%;
     background-color: rgb(38, 161, 38);
     border-radius: 50px;
     color: white;
     border: none;
     font-size: 21px;
+    margin-left: 19px;
 }

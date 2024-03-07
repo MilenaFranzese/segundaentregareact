@@ -6,6 +6,7 @@ import fetchSimultion from "../utils/fetchSimulation";
 import productos from "../utils/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import AddCantCart from "./AddCantCart";
 
 const DetailsItem = () => {
     const [ datos, setDatos ] = useState([]);
@@ -40,10 +41,16 @@ const DetailsItem = () => {
                                 />
                                 
                             <div className="buttons">
-                        
+                                    
+                                    <AddCantCart
+                                        cant={5}
+                                    />
+                                <div className="agregarAlCarrito">
                                     <ButtonDetalles 
                                         txt="Agregar al carrito"
                                     />
+                                </div>
+                                    
                             </div>
                         </div>
                     </>
