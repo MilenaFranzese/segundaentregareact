@@ -1,17 +1,18 @@
-import "../../styles/containerCart.css";
+import "../components/styles/containerCart.css"
 import ItemCart from "./ItemCart";
-import clear from "../../img/clear.svg";
+import close from "../img/close.png";
+import clear from "../img/clear.svg";
 import { useContext } from "react";
-import { controllerShowCart } from "./ContextCart";
-import { listCartContext } from "../components item/providerContextoListCart";
+import { listCartContext } from "../components/ProviderContextCart";
+import { constrollerShowCart } from "./ContextCart";
 
 const ContainerCart = () => {
 
-    const { cartShow, setCartShow} = useContext(controllerShowCart);
-    const {listCart, clearCart } = useContext(listCartContext);
+    const { listCart, clearCart } = useContext(listCartContext)
+    const { cartShow, setCartShow } = useContext(constrollerShowCart)
 
-    const style = {
-        display: cartShow
+    const style={
+        display:cartShow
     }
 
     const closeCart = () => {
@@ -19,42 +20,39 @@ const ContainerCart = () => {
     }
 
     return(
-        
-            <div className="cart" style={style} >
-                <div className="cerrar">
-                    <button className="close" onClick={closeCart}>
-                        <img src={close}></img>
-                    </button>
-                </div>
+        <div className="cart" style={style}>
 
-                <div className="containerItemsCart">
-                    {
-                        (listCart.length === 0 ) ? <span className="emptyCart">Tu carrito esta vacio, ¡llenalo!</span>
-                        : listCart.map(producto => ( 
-                            <ItemCart 
-                                key={producto.id}
-                                id={producto.id}
-                                title={producto.title}
-                                image={producto.imageProduct.firtsImage}
-                                quantity={producto.quantity}
-                                price={producto.price}
-                            />
-                        ))
-                    }   
-                </div>
-
-                <div className="TerminarCompra">
-                    
-                    <button className="terminar" >
-                        Terminar compra
-                    </button>
-
-                    <button className="clear" onClick={clearCart}>
-                        <img src={clear}></img>
-                    </button>
-                </div>
+            <div className="cerrar">
+                <button className="close" onClick={closeCart}>
+                    <img src={close} alt="cerrar carrito"></img>
+                </button>
             </div>
-        
+
+            <div className="containerItemsCart">
+                {
+                    (listCart.length === 0) ? <span className="emptyCart">Tu carrito está vacío ¡llenalo!</span>
+                    : listCart.map( product => (
+                        <ItemCart
+                        key={product.id}
+                        id={product.id}
+                        title={product.title}
+                        image={product.imageProduct}
+                        quantity={product.quantity}
+                        price={product.price}
+                        />
+                    ))
+                }
+            </div>
+
+            <div className="terminarCompra">
+                <button className="terminar">Terminar Compra</button>
+
+                <button className="clear" onClick={clearCart}>
+                    <img src={clear} alt="vaciar carrito"></img>
+                </button>
+            </div>
+
+        </div>
     )
 }
 
