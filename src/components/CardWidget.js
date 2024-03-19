@@ -3,10 +3,12 @@ import { FaShoppingCart } from "react-icons/fa";
 import { listCartContext } from "./ProviderContextCart";
 import { constrollerShowCart } from "./ContextCart";
 
-function CardWidget(){
+const CardWidget = () => {
 
     const { cartShow, setCartShow } = useContext (constrollerShowCart)
-    const { listCart } = useContext(listCartContext)
+    const { listCart } = useContext (listCartContext)
+
+    const totalItems = listCart.reduce((total, item) => total + item.quantity, 0);
 
     const showCart = () => {
         setCartShow( (cartShow === "none") ? "flex" : "none" )
@@ -17,7 +19,7 @@ function CardWidget(){
             <div className="carrito">
                 <FaShoppingCart/>
                 <span className="contador">
-                    {listCart.lenght}
+                    {totalItems}
                 </span>
             </div>
         </div>
@@ -26,4 +28,4 @@ function CardWidget(){
 )
 }
 
-export default CardWidget
+export default CardWidget;

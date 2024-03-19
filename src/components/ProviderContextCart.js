@@ -8,7 +8,7 @@ const ProviderContextCart = ( {children} ) => {
 
     const [ listCart, setListCart ] = useState([])
 
-    const addProduct = id => {
+    const addProduct = (id) => {
 
         const productAdd = productos.find(product => product.id === id)
         
